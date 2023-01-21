@@ -1,0 +1,133 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    background-color: white;
+    font-family: 'Times New Roman';
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.carousel-container{
+    width: 100rem;
+    height: 95vh;
+    /*height: 60rem;*/
+    background-color: #f1f4f6;
+    overflow: hidden;
+    position: relative;
+    /*top: 6rem;*/
+    margin: 2.5vh auto;
+    /*margin: 0 auto;*/
+
+}
+
+.carousel-slide{
+    width: 800rem;
+    height: 60rem;
+    display: flex;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+}
+
+
+.prev-arrow{
+    transform: rotate(180deg);
+}
+
+.arrow{
+    width: 4rem;
+    height: auto;
+    font-size: 3rem;
+    color: white;
+
+}
+
+button{
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-50%);
+    background-color: #ace4f8;
+    padding: 0.2rem;
+    border: none;
+
+}
+
+.prev .next{
+}
+
+.prev{
+    left: 3rem;
+    top: 50%;
+}
+
+.next{
+    right: 3rem;
+    top: 50%;
+}
+
+.random{
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: white;
+    background-color: #ace4f8;
+}
+
+
+.text{
+    padding: 0.7rem;
+    margin: 0 15rem;
+    text-align: center;
+}
+
+.name{
+    font-size: 3.5rem;
+    color: #92d2f4;
+
+}
+
+.position{
+    font-size: 2.7rem;
+    color: #9baab5;
+}
+
+.descr{
+    font-size: 2rem;
+    color: #9baab5;
+}
+
+.header{
+    font-size: 5rem;
+    padding: 3rem;
+    text-align: center;
+    color: #0e2c43;
+}
+
+.img-shape{
+    width: 14rem;
+    height: 14rem;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    background-color: #2f2622;
+    margin: 0.8rem auto;
+
+}
+
+.img{
+    width: 100%;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title></title>
+
+      <script src="https://kit.fontawesome.com/f468e2bd3d.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+
+  </head>
+
+  <body>
+
+
+      <div class="container">
+
+
+          <form>
+
+              <label for='new-pass' class="new-password tile">
+
+                  <span class="text-above-input">New password</span>
+
+                  <div class="input-div">
+
+                      <input class="pass-input pass-input-1 tile" type="password"  id="new-pass" placeholder="Input your new password" required>
+
+                      <i class="fa fa-eye eye-icon" id="eye-icon-1"></i>
+
+                  </div>
+
+              </label>
+
+              <label for='repeat-pass' class="repeat-new-password tile">
+
+                  <span class="text-above-input">Repeat new password</span>
+
+                  <div class="input-div">
+
+                      <input class="pass-input pass-input-2 tile" type="password" id="repeat-pass" placeholder="Repeat your password" required>
+
+                      <i class="fa fa-eye eye-icon" id="eye-icon-2"></i>
+
+                  </div>
+
+
+              </label>
+
+              <div class="pass-info-div not-visible">
+
+                  Passwords disagreement
+
+              </div>
+
+
+          </form>
+
+          <span class ='list-text'>Password requirements</span>
+
+
+              <ul class="pass-req">
+
+
+                  <li class="req at-least-8-char">
+
+                      <figure class="circle circle1">
+                          <i class="fa-solid fa-check icon-11 req-icon"></i>
+                          <i class="fa-solid fa-xmark icon-12 req-icon"></i>
+                      </figure>
+
+                      <span class="text-el 8-char">at least 8 characters</span>
+
+                  </li>
+
+                  <li class="req at-least-one-special">
+
+                      <figure class="circle circle2">
+                          <i class="fa-solid fa-check icon-21 req-icon"></i>
+                          <i class="fa-solid fa-xmark icon-22 req-icon"></i>
+                      </figure>
+
+                      <span class="text-el 8-char">at least one special character</span>
+
+                  </li>
+
+                  <li class="req at-least-onr-cap-letter">
+
+                      <figure class="circle circle3">
+                          <i class="fa-solid fa-check icon-31 req-icon"></i>
+                          <i class="fa-solid fa-xmark icon-32 req-icon"></i>
+                      </figure>
+
+                      <span class="text-el 8-char">at least one capital letter</span>
+
+                  </li>
+
+                  <li class="req at-least-one-digit">
+
+                      <figure class="circle circle4">
+                          <i class="fa-solid fa-check icon-41 req-icon"></i>
+                          <i class="fa-solid fa-xmark icon-42 req-icon"></i>
+                      </figure>
+
+                      <span class="text-el 8-char">at least one digit</span>
+
+                  </li>
+
+
+              </ul>
+
+      </div>
+
+  </body>
+
+</html>

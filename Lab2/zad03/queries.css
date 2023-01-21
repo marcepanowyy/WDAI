@@ -1,0 +1,48 @@
+
+@media (max-width: 63.75em) {
+    html{
+        font-size: 56.25%;
+    }
+  }
+  
+
+@media (max-width: 60.25em) {
+    .grid{
+    grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        padding: 8rem 9rem;
+    }
+}
+
+@media (max-width: 44.7em) {
+    .grid{
+    grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 8rem 20rem;
+    }
+}
+
+@media (max-width: 37.5em) {
+    
+    .container{
+        padding: 8rem 13rem;
+    }
+}
+
+@media (max-width: 29em) {
+
+    .city-footer{
+     flex-direction: column;
+    }
+    .card-list{
+        margin-top: 2rem;
+    }
+    .container{
+        padding: 8rem 4rem;
+    }
+    .city-text{
+        padding: 3rem 3rem 5rem;
+    }
+}

@@ -1,0 +1,110 @@
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Cambria', sans-serif;
+    height: auto;
+    background-color: #cacaca;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    aspect-ratio: 1/1;
+    width: 80%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /*margin-top: 5rem;*/
+}
+
+.header{
+    text-align: center;
+    font-size: 4rem;
+    background-color: #cacaca;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+
+.phone-book-list{
+    background-color: #cacaca;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 3em 5rem 0 2rem;
+    overflow-y: scroll;
+    height: 30rem;
+}
+
+.phone-book-list-element{
+    width: 90%;
+    font-size: 2rem;
+    margin: 0 auto 2rem auto;
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.name, .phone-number{
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+form{
+    background-color: #cacaca;
+    margin-top: 2rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    font-size: 2.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+input::placeholder{
+    color: inherit;
+}
+
+
+.trashbin{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+    color: white;
+    background-color: gray;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.trashbin:hover{
+    background-color: #cacaca;
+    scale: 1.1
+}
+
+input:focus{
+    scale: 1.03;
+    background: rgba(255, 255, 255, 0.49);
+}

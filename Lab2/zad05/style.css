@@ -1,0 +1,86 @@
+body{
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 1rem;
+    background-color: #f0f4f7;
+    color: rgb(26, 26, 142);
+}
+
+span{
+    margin: 1rem;
+}
+
+.container{
+    width: 80vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu{
+    width: 60%;
+    height: auto;
+    padding: 2rem 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: gray solid 1px;
+}
+
+.right{
+    width: 60%;
+}
+
+.tile{
+    width: 80%;
+    cursor: pointer;
+    padding: 0.8rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+
+
+.tile:hover {
+    background-color: #35bdb5;
+    scale: 1.1;
+    transition: 0.5s;
+
+}
+.tile:hover i{
+    color: white;
+    border: 1px solid white;
+}
+
+.menu i{
+    border: 1px solid rgb(26, 26, 142);
+    border-radius: 20%;
+    padding: 0.4rem;
+    transition: width 1s ease-in-out;
+}
+
+.menu i:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+@media all and (max-width: 850px) {
+
+    span{
+        display: none;
+    }
+
+    .menu{
+        width: 30%;
+        transition: width 1.2s ease-in-out;
+    }
+
+    .icon-lightbulb{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+
+}

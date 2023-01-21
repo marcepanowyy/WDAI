@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #eceb54;
+}
+
+label{
+    color: white;
+    display: block;
+    cursor: pointer;
+    font-size: max(2vw, 2vh);
+    padding: max(2vw, 2vh);
+}
+
+.menu1{
+    position: relative;
+    background-color: #ff6cb4;
+    list-style: none;
+    margin: 10vh auto;
+    width: 60vw;
+    border-radius: 1vw;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.menu2{
+    width: 100%;
+    max-height: 0;
+    background-color: #1973a5;
+    list-style: none;
+}
+
+
+input:checked + .menu2{
+    overflow: hidden;
+    max-height: 1000px;
+    transition: 2s max-height ease-in;
+}
+
+
+label:has(+ input:checked) {
+    background-color: #cf5b5c;
+}
+
+
+input:checked + .menu2 li:first-child:after{
+    position: absolute;
+    content: '';
+    height: max(3vw, 3vh);
+    aspect-ratio: 1/1;
+    background-color: #cf5b5c;
+    top: max(-1vw, -1vh);
+    right: 20%;
+    transform: translate(0, -50%) rotate(45deg);
+    z-index: 1;
+}
+
+.menu1 li{
+    position: relative;
+}
+
+.menu2 li:hover{
+    background: linear-gradient(#1973a5 50%, #85a7ca 50%);
+    top: 50%;
+}
+
+.menu2 li:hover:before{
+    position: absolute;
+    content: '';
+    height: max(3vw, 3vh);
+    aspect-ratio: 1/1;
+    background-color: #eceb54;
+    top: 50%;
+    left: min(-2vw, -2vh);
+    transform: translate(0, -50%) rotate(45deg);
+    z-index: 1;
+}
+
+.menu2 li:hover:after{
+    position: absolute;
+    content: '';
+    height: max(3vw, 3vh);
+    aspect-ratio: 1/1;
+    background-color: #eceb54;
+    top: 50%;
+    right: min(-2vw, -2vh);
+    transform: translate(0, -50%) rotate(45deg);
+    z-index: 1;
+}
+
+.menu1 li {
+    cursor: pointer;
+}
+
+.menu2 li{
+    font-size: max(2vw, 2vh);
+    justify-content: center;
+    padding: max(2vw, 2vh);
+    position: relative;
+
+}
+.menu2 li a{
+    margin-left: max(2vw, 2vh);
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    display: none;
+}
+
