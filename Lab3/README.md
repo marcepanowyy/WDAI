@@ -1,6 +1,4 @@
 
-"""
-
 To run server in ex. 7:
 
 ```
@@ -10,9 +8,7 @@ npm install -g
 ```
 npm run start
 ```
-
-
-"""
+---
 
 https://user-images.githubusercontent.com/101901301/213894355-1dd9886a-a074-4e6e-857a-585d79cd37b9.mp4
 
