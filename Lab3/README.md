@@ -1,16 +1,4 @@
 
-To install server:
-
-```
-npm install -g json-server
-```
-
-To run server in ex. 7:
-
-```
-npm run start
-```
-
 https://user-images.githubusercontent.com/101901301/213894355-1dd9886a-a074-4e6e-857a-585d79cd37b9.mp4
 
 
@@ -30,3 +18,15 @@ https://user-images.githubusercontent.com/101901301/213894370-3de4e1fc-2c13-48c7
 
 
 Ex. 12: [Zombie Game](https://github.com/marcepanowyy/ZombieGame)
+
+To install server (for ex.7):
+
+```
+npm install -g json-server
+```
+
+To run server in ex. 7:
+
+```
+npm run start
+```
