@@ -19,6 +19,8 @@ https://user-images.githubusercontent.com/101901301/213894370-3de4e1fc-2c13-48c7
 
 Ex. 12: [Zombie Game](https://github.com/marcepanowyy/ZombieGame)
 
+------
+
 To install server (for ex.7):
 
 ```
